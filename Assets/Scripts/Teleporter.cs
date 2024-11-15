@@ -2,40 +2,33 @@ using UnityEngine;
 
 public class Teleporter : MonoBehaviour
 {
-    public enum Scene
-    {
-        FirstFloor,
-        TopFloor
-    }
 
 
     [SerializeField]
-    public void TeleportToScene(Scene scene)
+    public void TeleportToScene(int scene)
     {
-        switch (scene)
+        if (scene == 0)
         {
-            case Scene.FirstFloor:
-                GameManager.Instance.firstFloorCamera.gameObject.SetActive(true);
-                GameManager.Instance.outsideCamera.gameObject.SetActive(false);
-                GameManager.Instance.topFloorCamera.gameObject.SetActive(false);
-                PlayerController.Instance.gameObject.transform.position = GameManager.Instance.firstFloorSpawnPos;
-                break;
-            case Scene.TopFloor:
-                GameManager.Instance.firstFloorCamera.gameObject.SetActive(false);
-                GameManager.Instance.outsideCamera.gameObject.SetActive(false);
-                GameManager.Instance.topFloorCamera.gameObject.SetActive(true);
-                PlayerController.Instance.gameObject.transform.position = GameManager.Instance.topFloorSpawnPos;
-                break;
+            GameManager.Instance.firstFloorCamera.gameObject.SetActive(true);
+            GameManager.Instance.outsideCamera.gameObject.SetActive(false);
+            GameManager.Instance.topFloorCamera.gameObject.SetActive(false);
+            PlayerController.Instance.gameObject.transform.position = GameManager.Instance.firstFloorSpawnPos;
+        }
+         else {
+            GameManager.Instance.firstFloorCamera.gameObject.SetActive(false);
+            GameManager.Instance.outsideCamera.gameObject.SetActive(false);
+            GameManager.Instance.topFloorCamera.gameObject.SetActive(true);
+            PlayerController.Instance.gameObject.transform.position = GameManager.Instance.topFloorSpawnPos;
         }
     }
 
     public void TeleportToFirstFloor()
     {
-        TeleportToScene(Scene.FirstFloor);
+        TeleportToScene(0);
     }
 
     public void TeleportToTopFloor()
     {
-        TeleportToScene(Scene.TopFloor);
+        TeleportToScene(1);
     }
 }

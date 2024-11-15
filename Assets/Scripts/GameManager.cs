@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         firstFloorSpawnPos = firstFloorSpawnObject.transform.position;
-        topFloorSpawnPos = firstFloorSpawnObject.transform.position;
+        topFloorSpawnPos = topFloorSpawnObject.transform.position;
         // Singleton setup - ensures only one instance exists
         if (Instance == null)
         {

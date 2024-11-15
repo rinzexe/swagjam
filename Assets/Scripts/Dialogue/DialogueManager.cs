@@ -46,20 +46,24 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(advanceKey) && isDisplayingLine && currentLine != null)
+        if (Input.GetKeyDown(advanceKey) || Input.GetMouseButtonDown(0))
         {
-            if (isTyping)
+            if (isDisplayingLine && currentLine != null)
             {
-                if (typewriterCoroutine != null)
+                Debug.Log("sex");
+                if (isTyping)
                 {
-                    StopCoroutine(typewriterCoroutine);
+                    if (typewriterCoroutine != null)
+                    {
+                        StopCoroutine(typewriterCoroutine);
+                    }
+                    dialogueText.text = currentLine.text;
+                    isTyping = false;
                 }
-                dialogueText.text = currentLine.text;
-                isTyping = false;
-            }
-            else if (currentLine.waitForInput)
-            {
-                AdvanceToNextLine();
+                else
+                {
+                    AdvanceToNextLine();
+                }
             }
         }
     }
@@ -95,6 +99,7 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayNextLine()
     {
+        Debug.Log("nextline");
         if (currentLines.Count == 0)
         {
             EndDialogue();
@@ -146,7 +151,9 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
-        if (onDialogueComplete) {
+        Debug.Log("end");
+        if (onDialogueComplete)
+        {
             onDialogueComplete.Raise();
         }
         PlayerController.Instance.canMove = true;

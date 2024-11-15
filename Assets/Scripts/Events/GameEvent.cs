@@ -5,8 +5,9 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "New Game Event", menuName = "Game Events/Event")]
 public class GameEvent : ScriptableObject
 {
-    private readonly List<GameEventListener> listeners = new List<GameEventListener>();
-    
+    [SerializeField]
+    public List<GameEventListener> listeners = new List<GameEventListener>();
+
     public void Raise()
     {
         for (int i = listeners.Count - 1; i >= 0; i--)
@@ -14,16 +15,21 @@ public class GameEvent : ScriptableObject
             listeners[i].OnEventRaised();
         }
     }
-    
+
     public void RegisterListener(GameEventListener listener)
     {
         if (!listeners.Contains(listener))
+        {
+            Debug.Log(listener.gameEvent);
             listeners.Add(listener);
+        }
     }
-    
+
     public void UnregisterListener(GameEventListener listener)
     {
         if (listeners.Contains(listener))
+        {
             listeners.Remove(listener);
+        }
     }
 }

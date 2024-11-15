@@ -10,6 +10,8 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private DialogueSequence dialogueSequence;
     [SerializeField] private TriggerType triggerType;
 
+    bool isActive = false;
+
     public enum TriggerType
     {
         OnStart,
@@ -26,8 +28,9 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update()
     {
-        if (triggerType == TriggerType.OnInteract && DialogueManager.Instance.interationPanel.activeInHierarchy == true)
+        if (triggerType == TriggerType.OnInteract && DialogueManager.Instance.interationPanel.activeInHierarchy == true && Input.GetKeyDown(KeyCode.E) && isActive)
         {
+            isActive = false;
             DialogueManager.Instance.interationPanel.SetActive(false);
             TriggerDialogue();
         }
@@ -36,10 +39,22 @@ public class DialogueTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (triggerType == TriggerType.OnInteract && collider.CompareTag("Player"))
+        {
+            isActive = true;
             DialogueManager.Instance.interationPanel.SetActive(true);
+        }
 
         if (triggerType == TriggerType.OnTrigger && collider.CompareTag("Player"))
             TriggerDialogue();
+    }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if (triggerType == TriggerType.OnInteract && collider.CompareTag("Player"))
+        {
+            isActive = false;
+            DialogueManager.Instance.interationPanel.SetActive(false);
+        }
     }
 
     public void TriggerDialogue()
