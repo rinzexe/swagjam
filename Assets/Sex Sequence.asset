@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Sex Sequence
   m_EditorClassIdentifier: 
   lines:
-  - characterName: Manager
-    text: Hello hello can you hear me
+  - characterName: Box
+    text: The fuck are you looking at
     description: 
     displayDuration: 3
     typewriterSpeed: 0.05
@@ -27,7 +27,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Me
-    text: Yes what do u want
+    text: You?
     description: 
     displayDuration: 3
     typewriterSpeed: 0.05
@@ -39,22 +39,8 @@ MonoBehaviour:
     onLineEnd:
       m_PersistentCalls:
         m_Calls: []
-  - characterName: Manager
-    text: I pulled the deadline from sunday to thursday, I hope you will be able
-      to finish the project by then
-    description: 
-    displayDuration: 3
-    typewriterSpeed: 0.05
-    waitForInput: 1
-    onLineComplete: {fileID: 0}
-    onLineStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onLineEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - characterName: Me
-    text: U DO NOT COMMAND ME. I'M NOT PART OF YOUR SYSTEM
+  - characterName: Box
+    text: Mind your own business bitch
     description: 
     displayDuration: 3
     typewriterSpeed: 0.05
