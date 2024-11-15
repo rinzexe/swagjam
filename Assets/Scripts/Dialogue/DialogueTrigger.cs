@@ -8,25 +8,42 @@ using UnityEngine.Events;
 public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] private DialogueSequence dialogueSequence;
-    [SerializeField] private bool triggerOnStart;
-    [SerializeField] private bool triggerOnInteract;
+    [SerializeField] private TriggerType triggerType;
+
+    public enum TriggerType
+    {
+        OnStart,
+        OnTrigger,
+        OnInteract
+    }
     [SerializeField] private GameEvent onDialogueComplete;
 
     private void Start()
     {
-        if (triggerOnStart)
+        if (triggerType == TriggerType.OnStart)
             TriggerDialogue();
+    }
+
+    void Update()
+    {
+        if (triggerType == TriggerType.OnInteract && DialogueManager.Instance.interationPanel.activeInHierarchy == true)
+        {
+            DialogueManager.Instance.interationPanel.SetActive(false);
+            TriggerDialogue();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (triggerOnInteract && collider.CompareTag("Player"))
+        if (triggerType == TriggerType.OnInteract && collider.CompareTag("Player"))
+            DialogueManager.Instance.interationPanel.SetActive(true);
+
+        if (triggerType == TriggerType.OnTrigger && collider.CompareTag("Player"))
             TriggerDialogue();
     }
 
     public void TriggerDialogue()
     {
-        Debug.Log("Triggerd");
-        DialogueManager.Instance.StartSequence(dialogueSequence);
+        DialogueManager.Instance.StartSequence(dialogueSequence, onDialogueComplete);
     }
 }
