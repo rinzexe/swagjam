@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      potato_animation_0: -6962678230927387879
+      potato_animation_1: 4342519900671444305
+      potato_animation_2: 3979976322503972276
+      potato_animation_3: -4906057078974219986
+      potato_animation_4: -8382677434127835308
+      potato_animation_5: -1245694526512924503
+      potato_animation_6: 7284323528252334330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
