@@ -14,11 +14,19 @@ public class Teleporter : MonoBehaviour
             GameManager.Instance.topFloorCamera.gameObject.SetActive(false);
             PlayerController.Instance.gameObject.transform.position = GameManager.Instance.firstFloorSpawnPos;
         }
-         else {
+        else if (scene == 1)
+        {
             GameManager.Instance.firstFloorCamera.gameObject.SetActive(false);
             GameManager.Instance.outsideCamera.gameObject.SetActive(false);
             GameManager.Instance.topFloorCamera.gameObject.SetActive(true);
             PlayerController.Instance.gameObject.transform.position = GameManager.Instance.topFloorSpawnPos;
+        }
+        else
+        {
+            GameManager.Instance.firstFloorCamera.gameObject.SetActive(false);
+            GameManager.Instance.outsideCamera.gameObject.SetActive(true);
+            GameManager.Instance.topFloorCamera.gameObject.SetActive(false);
+            PlayerController.Instance.gameObject.transform.position = GameManager.Instance.outsideSpawnPos;
         }
     }
 
@@ -30,5 +38,10 @@ public class Teleporter : MonoBehaviour
     public void TeleportToTopFloor()
     {
         TeleportToScene(1);
+    }
+
+    public void TeleportToTheOutside()
+    {
+        TeleportToScene(2);
     }
 }

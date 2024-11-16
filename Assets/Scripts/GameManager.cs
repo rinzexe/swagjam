@@ -6,9 +6,12 @@ public class GameManager : MonoBehaviour
 
     public Vector3 firstFloorSpawnPos;
     public Vector3 topFloorSpawnPos;
+    public Vector3 outsideSpawnPos;
+    
 
     public GameObject firstFloorSpawnObject;
     public GameObject topFloorSpawnObject;
+    public GameObject outsideSpawnObject;
 
     public Camera outsideCamera;
     public Camera firstFloorCamera;
@@ -20,6 +23,7 @@ public class GameManager : MonoBehaviour
     {
         firstFloorSpawnPos = firstFloorSpawnObject.transform.position;
         topFloorSpawnPos = topFloorSpawnObject.transform.position;
+        outsideSpawnPos = outsideSpawnObject.transform.position;
         // Singleton setup - ensures only one instance exists
         if (Instance == null)
         {
