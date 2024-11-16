@@ -142,8 +142,10 @@ public class DialogueManager : MonoBehaviour
 
         isTyping = false;
 
-            yield return new WaitForSeconds(line.displayDuration);
+        if (!line.waitForInput)
+        {
             AdvanceToNextLine();
+        }
     }
 
     private void EndDialogue()
@@ -164,7 +166,7 @@ public class DialogueManager : MonoBehaviour
         DialogueLine tempLine = new DialogueLine
         {
             text = text,
-            displayDuration = duration,
+            waitForInput = false
         };
         currentLines.Enqueue(tempLine);
 

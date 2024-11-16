@@ -9,10 +9,10 @@ using UnityEngine.Events;
 public class DialogueLine
 {
     public string characterName;
-    [TextArea(3, 10)]
+        [TextArea(3, 10)]
     public string text;
-    public float displayDuration = 3f;
     public float typewriterSpeed = 0.05f;
+    public bool waitForInput;
     public GameEvent onLineComplete;
     public UnityEvent onLineStart;
     public UnityEvent onLineEnd;
