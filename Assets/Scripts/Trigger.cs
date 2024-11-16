@@ -1,9 +1,7 @@
 using UnityEngine;
 
-public class GameEventTrigger : MonoBehaviour
+public class Trigger : MonoBehaviour
 {
-    [SerializeField] private GameEvent gameEvent;
-
     [SerializeField] private TriggerType triggerType;
 
     bool isActive = false;
@@ -14,9 +12,11 @@ public class GameEventTrigger : MonoBehaviour
         OnInteract
     }
 
+    [SerializeField] private GameEvent gameEvent;
+
     void Update()
     {
-        if (triggerType == TriggerType.OnInteract && DialogueManager.Instance.interationPanel.activeInHierarchy == true && Input.GetKeyDown(KeyCode.E) && isActive)
+        if (triggerType == TriggerType.OnInteract && Input.GetKeyDown(KeyCode.E) && isActive)
         {
             isActive = false;
             DialogueManager.Instance.interationPanel.SetActive(false);

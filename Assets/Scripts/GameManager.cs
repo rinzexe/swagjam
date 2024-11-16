@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public Camera firstFloorCamera;
     public Camera topFloorCamera;
 
-    public float timeBeforeNextLog = 1000;
+    public float timeBeforeNextLog = 10000000000;
 
     int currentLog = 0;
 

@@ -9,25 +9,39 @@ public class TaskManager : MonoBehaviour
     public float radarTimeReward = 200;
     public float cleaningTimeReward = 60;
 
-    public float defaultWindowCooldown = 100;
+    public float defaultWindowCooldown = 0;
     public float defaultAsteroidsCooldown = 200;
     public float defaultRadarCooldown = 300;
     public float defaultCleaningCooldown = 400;
-    
-    float windowCooldown;
-    float asteroidsCooldown;
-    float radarCooldown;
-    float cleaningCooldown;
+
+    public float windowCooldown;
+    public float asteroidsCooldown;
+    public float radarCooldown;
+    public float cleaningCooldown;
 
     public GameObject taskStatusPanel;
+    public GameObject taskPanel;
 
-    void Start()
+    public static TaskManager Instance;
+
+    void Awake()
     {
+        taskPanel.SetActive(false);
         windowCooldown = defaultWindowCooldown;
         asteroidsCooldown = defaultAsteroidsCooldown;
         radarCooldown = defaultRadarCooldown;
         cleaningCooldown = defaultCleaningCooldown;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
+
 
     public void Update()
     {
@@ -59,6 +73,7 @@ public class TaskManager : MonoBehaviour
         windowCooldown = defaultWindowCooldown;
         GameManager.Instance.timeBeforeNextLog -= windowTimeReward;
         taskStatusPanel.transform.GetChild(0).GetComponent<Image>().color = new Color(0, 255, 0);
+        PlayerController.Instance.canMove = true;
     }
 
     public void CompleteAsteroids()
@@ -66,6 +81,7 @@ public class TaskManager : MonoBehaviour
         asteroidsCooldown = defaultAsteroidsCooldown;
         GameManager.Instance.timeBeforeNextLog -= asteroidsTimeReward;
         taskStatusPanel.transform.GetChild(1).GetComponent<Image>().color = new Color(0, 255, 0);
+        PlayerController.Instance.canMove = true;
     }
 
     public void CompleteRadar()
@@ -73,6 +89,7 @@ public class TaskManager : MonoBehaviour
         radarCooldown = defaultRadarCooldown;
         GameManager.Instance.timeBeforeNextLog -= radarTimeReward;
         taskStatusPanel.transform.GetChild(2).GetComponent<Image>().color = new Color(0, 255, 0);
+        PlayerController.Instance.canMove = true;
     }
 
     public void CompleteCleaning()
@@ -80,5 +97,6 @@ public class TaskManager : MonoBehaviour
         cleaningCooldown = defaultCleaningCooldown;
         GameManager.Instance.timeBeforeNextLog -= cleaningTimeReward;
         taskStatusPanel.transform.GetChild(3).GetComponent<Image>().color = new Color(0, 255, 0);
+        PlayerController.Instance.canMove = true;
     }
 }

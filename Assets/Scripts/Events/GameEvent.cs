@@ -20,7 +20,6 @@ public class GameEvent : ScriptableObject
     {
         if (!listeners.Contains(listener))
         {
-            Debug.Log(listener.gameEvent);
             listeners.Add(listener);
         }
     }
