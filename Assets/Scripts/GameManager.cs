@@ -14,7 +14,11 @@ public class GameManager : MonoBehaviour
     public Camera firstFloorCamera;
     public Camera topFloorCamera;
 
-    public float timeBeforeNextLog = 10;
+    public float timeBeforeNextLog = 1000;
+
+    int currentLog = 0;
+
+    public DialogueSequence[] logs;
 
     private void Awake()
     {
@@ -32,10 +36,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    int progress = 0;
-
     void Update()
     {
+        if (timeBeforeNextLog < 0)
+        {
+            timeBeforeNextLog = 10;
+            DialogueManager.Instance.StartSequence(logs[currentLog], null);
+        }
         timeBeforeNextLog -= Time.deltaTime;
     }
 }
