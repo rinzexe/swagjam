@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public Camera firstFloorCamera;
     public Camera topFloorCamera;
 
+    public float timeBeforeNextLog = 10;
+
     private void Awake()
     {
         firstFloorSpawnPos = firstFloorSpawnObject.transform.position;
@@ -34,6 +36,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
+        timeBeforeNextLog -= Time.deltaTime;
     }
 }
