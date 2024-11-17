@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Recorder
-    text: This is your new house, new crib.
+    text: This is your new house!
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
@@ -36,7 +36,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Recorder
-    text: Not for free though...
+    text: It's not the largest, but you'll get used to it.
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
@@ -47,8 +47,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Recorder
-    text: With luxury comes responsibility, go upstairs to learn about keeping up
-      the house
+    text: Come upstairs when you're ready to learn about your new responsibilities
+      as a lighthouse keeper!
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

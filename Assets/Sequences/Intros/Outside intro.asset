@@ -36,7 +36,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Recorder
-    text: Hey there, new keeper! Just wanted to welcome you to the lighthouse gig.
+    text: Hey there, new keeper! Just wanted to welcome you to the lighthouse!
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

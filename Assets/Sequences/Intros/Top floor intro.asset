@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Recorder
-    text: Aight kid listen
+    text: Alright, this is the operations room!
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
@@ -25,7 +25,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Recorder
-    text: It's lowkey sleepy time for me and I've been slacking with writing stuff
+    text: The screen towards the right edge of the desk is where you can see the
+      status of different tasks that have to be done around here.
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
@@ -36,7 +37,19 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Recorder
-    text: You'll have to figure this one out by yourself
+    text: On the left, you have the radar terminal.
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Recorder
+    text: And don't forget to clean the windows on the left side of the room from
+      time to time!
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

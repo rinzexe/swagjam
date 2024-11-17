@@ -42,7 +42,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BlockSize: 10
-    - _Distance: 0.041056275
+    - _Distance: 0.034417603
     - _EnableExternalAlpha: 0
     - _GlitchFreq: 0.556
     - _GlitchIntensity: 0.5
