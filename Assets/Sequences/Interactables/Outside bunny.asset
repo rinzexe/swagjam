@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2738cf7ac5f1dfeeb7e3433d1e6c239, type: 3}
+  m_Name: Outside bunny
+  m_EditorClassIdentifier: 
+  lines:
+  - characterName: A cute bunny
+    text: Who the fuck are you looking at
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Me
+    text: Aww you're so cute and fluffy... Let me give you a hug !!!
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Terrified bunny
+    text: GET THE FUCK AWAY FROM ME. POLICE. COPS. ANYONE
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []

@@ -12,7 +12,7 @@ public class DialogueLine
         [TextArea(3, 10)]
     public string text;
     public float typewriterSpeed = 0.05f;
-    public bool waitForInput;
+    public bool waitForInput = true;
     public GameEvent onLineComplete;
     public UnityEvent onLineStart;
     public UnityEvent onLineEnd;

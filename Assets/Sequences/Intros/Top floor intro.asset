@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2738cf7ac5f1dfeeb7e3433d1e6c239, type: 3}
+  m_Name: Top floor intro
+  m_EditorClassIdentifier: 
+  lines:
+  - characterName: Recorder
+    text: Aight kid listen
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Recorder
+    text: It's lowkey sleepy time for me and I've been slacking with writing stuff
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Recorder
+    text: You'll have to figure this one out by yourself
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []

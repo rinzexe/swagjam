@@ -6,17 +6,25 @@ public class GameManager : MonoBehaviour
 
     public Vector3 firstFloorSpawnPos;
     public Vector3 topFloorSpawnPos;
+    public Vector3 outsideSpawnPos;
 
     public GameObject firstFloorSpawnObject;
     public GameObject topFloorSpawnObject;
+
+    public GameObject outsideSpawnObject;
 
     public Camera outsideCamera;
     public Camera firstFloorCamera;
     public Camera topFloorCamera;
 
-    public float timeBeforeNextLog = 10000000000;
+    public float defaultTimeBeforeNextLog;
+    public float timeBeforeNextLog = 5;
 
     int currentLog = 0;
+
+    public CleaningTask cleaningTask;
+    public RadarTask radarTask;
+    public WindowTask windowTask;
 
     public DialogueSequence[] logs;
 
@@ -24,6 +32,7 @@ public class GameManager : MonoBehaviour
     {
         firstFloorSpawnPos = firstFloorSpawnObject.transform.position;
         topFloorSpawnPos = topFloorSpawnObject.transform.position;
+        outsideSpawnPos = outsideSpawnObject.transform.position;
         // Singleton setup - ensures only one instance exists
         if (Instance == null)
         {
@@ -38,10 +47,14 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (timeBeforeNextLog < 0)
+        if (timeBeforeNextLog < 0 &&
+                radarTask.taskActive == false &&
+                cleaningTask.taskActive == false &&
+                windowTask.taskActive == false)
         {
-            timeBeforeNextLog = 10;
+            timeBeforeNextLog = defaultTimeBeforeNextLog;
             DialogueManager.Instance.StartSequence(logs[currentLog], null);
+            currentLog++;
         }
         timeBeforeNextLog -= Time.deltaTime;
     }

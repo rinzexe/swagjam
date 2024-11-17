@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -134,10 +134,10 @@ TextureImporter:
       name: potato_animation_0
       rect:
         serializedVersion: 2
-        x: 557
-        y: 101
-        width: 237
-        height: 115
+        x: 0
+        y: 0
+        width: 974
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: potato_animation_1
       rect:
         serializedVersion: 2
-        x: 1531
-        y: 102
-        width: 237
-        height: 71
+        x: 974
+        y: 0
+        width: 974
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: potato_animation_2
       rect:
         serializedVersion: 2
-        x: 1699
-        y: 161
-        width: 44
-        height: 50
+        x: 1948
+        y: 0
+        width: 974
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,10 +200,10 @@ TextureImporter:
       name: potato_animation_3
       rect:
         serializedVersion: 2
-        x: 2505
-        y: 86
-        width: 237
-        height: 79
+        x: 2922
+        y: 0
+        width: 974
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,77 +218,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: potato_animation_4
-      rect:
-        serializedVersion: 2
-        x: 2673
-        y: 164
-        width: 44
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 45f9028794fbaab80800000000000000
-      internalID: -8382677434127835308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: potato_animation_5
-      rect:
-        serializedVersion: 2
-        x: 3479
-        y: 102
-        width: 237
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a87c889d6766bee0800000000000000
-      internalID: -1245694526512924503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: potato_animation_6
-      rect:
-        serializedVersion: 2
-        x: 3647
-        y: 161
-        width: 44
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af0208aa7ad171560800000000000000
-      internalID: 7284323528252334330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 248596480721810d89eeb82a123976ea
     internalID: 0
     vertices: []
     indices: 
@@ -302,9 +236,6 @@ TextureImporter:
       potato_animation_1: 4342519900671444305
       potato_animation_2: 3979976322503972276
       potato_animation_3: -4906057078974219986
-      potato_animation_4: -8382677434127835308
-      potato_animation_5: -1245694526512924503
-      potato_animation_6: 7284323528252334330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

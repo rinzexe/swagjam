@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2738cf7ac5f1dfeeb7e3433d1e6c239, type: 3}
+  m_Name: Log 1
+  m_EditorClassIdentifier: 
+  lines:
+  - characterName: Recorder
+    text: Are you settling in well, kid?
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Recorder
+    text: "All this space, just for you, with no one around\u2026"
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Recorder
+    text: I know I felt lonely at first.
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Recorder
+    text: "But, you know, this place isn\u2019t actually all that bad."
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Recorder
+    text: Those are other lighthouses, with keepers there, just like you.
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Recorder
+    text: You are working together, to make sure spaceships travel safely.
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Recorder
+    text: "It\u2019s kinda poetic when you think about it\u2026"
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []

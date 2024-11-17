@@ -11,9 +11,11 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     private Vector2 currentVelocity;
 
+    public Animator animator;
+
     public bool canMove = true;
 
-    public static PlayerController Instance { get; private set; }
+    public static PlayerController Instance { get; private set; }    
 
     private void Awake()
     {
@@ -35,6 +37,9 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         movement = movement.normalized;
+
+        animator.SetFloat("x", movement.y == 0 ? movement.x : 0);
+        animator.SetFloat("y", movement.y);
 
         if (canMove == false) {
             movement = Vector2.zero;
