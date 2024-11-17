@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 
     public DialogueSequence[] logs;
 
+    public GameEvent endSequence;
+
     private void Awake()
     {
         firstFloorSpawnPos = firstFloorSpawnObject.transform.position;
@@ -50,7 +52,7 @@ public class GameManager : MonoBehaviour
     {
         if (currentLog > 2 && !endingStarted) {
             endingStarted = true;
-            // start your animation here
+            endSequence.Raise();
         }
         if (timeBeforeNextLog < 0 &&
                 radarTask.taskActive == false &&
