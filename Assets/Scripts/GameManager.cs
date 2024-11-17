@@ -44,8 +44,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    bool endingStarted = false;
+
     void Update()
     {
+        if (currentLog > 2 && !endingStarted) {
+            endingStarted = true;
+            // start your animation here
+        }
         if (timeBeforeNextLog < 0 &&
                 radarTask.taskActive == false &&
                 cleaningTask.taskActive == false &&
