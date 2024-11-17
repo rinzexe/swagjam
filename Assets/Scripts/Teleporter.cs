@@ -14,23 +14,15 @@ public class Teleporter : MonoBehaviour
             GameManager.Instance.topFloorCamera.gameObject.SetActive(false);
             PlayerController.Instance.gameObject.transform.position = GameManager.Instance.firstFloorSpawnPos;
         }
-<<<<<<< HEAD
-         else if (scene == 1) {
-=======
         else if (scene == 1)
         {
->>>>>>> dfd3ecfd1e9f98e6b2ab950029bee60d7e816ad6
             GameManager.Instance.firstFloorCamera.gameObject.SetActive(false);
             GameManager.Instance.outsideCamera.gameObject.SetActive(false);
             GameManager.Instance.topFloorCamera.gameObject.SetActive(true);
             PlayerController.Instance.gameObject.transform.position = GameManager.Instance.topFloorSpawnPos;
         }
-<<<<<<< HEAD
-                 else {
-=======
         else
         {
->>>>>>> dfd3ecfd1e9f98e6b2ab950029bee60d7e816ad6
             GameManager.Instance.firstFloorCamera.gameObject.SetActive(false);
             GameManager.Instance.outsideCamera.gameObject.SetActive(true);
             GameManager.Instance.topFloorCamera.gameObject.SetActive(false);
@@ -48,14 +40,8 @@ public class Teleporter : MonoBehaviour
         TeleportToScene(1);
     }
 
-<<<<<<< HEAD
-        public void TeleportToOutside()
-    {
-        TeleportToScene(3);
-=======
     public void TeleportToTheOutside()
     {
         TeleportToScene(2);
->>>>>>> dfd3ecfd1e9f98e6b2ab950029bee60d7e816ad6
     }
 }

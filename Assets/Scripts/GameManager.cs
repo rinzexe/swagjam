@@ -7,15 +7,9 @@ public class GameManager : MonoBehaviour
     public Vector3 firstFloorSpawnPos;
     public Vector3 topFloorSpawnPos;
     public Vector3 outsideSpawnPos;
-<<<<<<< HEAD
-=======
-    
->>>>>>> dfd3ecfd1e9f98e6b2ab950029bee60d7e816ad6
 
     public GameObject firstFloorSpawnObject;
     public GameObject topFloorSpawnObject;
-    public GameObject outsideSpawnObject;
-
     public GameObject outsideSpawnObject;
 
     public Camera outsideCamera;

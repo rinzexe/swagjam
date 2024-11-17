@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      exterior_light_animate_0: -8290260250620901128
+      exterior_light_animate_1: -78290161301125458
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
