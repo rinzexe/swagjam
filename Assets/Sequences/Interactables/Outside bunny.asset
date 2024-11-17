@@ -13,30 +13,8 @@ MonoBehaviour:
   m_Name: Outside bunny
   m_EditorClassIdentifier: 
   lines:
-  - characterName: A cute bunny
-    text: Who the fuck are you looking at
-    typewriterSpeed: 0.05
-    waitForInput: 1
-    onLineComplete: {fileID: 0}
-    onLineStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onLineEnd:
-      m_PersistentCalls:
-        m_Calls: []
   - characterName: Me
-    text: Aww you're so cute and fluffy... Let me give you a hug !!!
-    typewriterSpeed: 0.05
-    waitForInput: 1
-    onLineComplete: {fileID: 0}
-    onLineStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onLineEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - characterName: Terrified bunny
-    text: GET THE FUCK AWAY FROM ME. POLICE. COPS. ANYONE
+    text: It's a cute bunny statue.
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

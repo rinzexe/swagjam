@@ -14,18 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Me
-    text: That's one stinky ass sock
-    typewriterSpeed: 0.05
-    waitForInput: 1
-    onLineComplete: {fileID: 0}
-    onLineStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onLineEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - characterName: Me
-    text: The person who left it must be real disgusting
+    text: That's one stinky sock
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

@@ -14,29 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Me
-    text: Old solar panels
-    typewriterSpeed: 0.05
-    waitForInput: 1
-    onLineComplete: {fileID: 0}
-    onLineStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onLineEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - characterName: Me
-    text: ...
-    typewriterSpeed: 0.5
-    waitForInput: 1
-    onLineComplete: {fileID: 0}
-    onLineStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onLineEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - characterName: Me
-    text: Boring
+    text: Old solar panels. They still seem functional.
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
