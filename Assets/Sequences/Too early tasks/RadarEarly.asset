@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Me
-    text: The signal seems to be fine
+    text: The signal seems to be fine for now!
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

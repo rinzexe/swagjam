@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Me
-    text: I think I had this exact same jacket at some point
+    text: Weird, he didn't even take his jacket with him...
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

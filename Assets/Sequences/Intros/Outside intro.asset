@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Recorder
-    text: Uhhh, is this thing on?
+    text: Uhhh, is this thing on? I hope it is...
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
@@ -25,7 +25,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Recorder
-    text: I hope it is...
+    text: Hi there, new kid! Congrats on the lighthouse keeper gig! I know a new
+      job can be stressful, I wanted to take some load off your shoulders and leave
+      you instructions.
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
@@ -36,7 +38,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Recorder
-    text: Hey there, new keeper! Just wanted to welcome you to the lighthouse!
+    text: "Okay now, what\u2019s first\u2026 The door! - no need to worry about the
+      door code, I left it open for you. Wouldn't want you standing out there in
+      the cold!"
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
@@ -46,21 +50,8 @@ MonoBehaviour:
     onLineEnd:
       m_PersistentCalls:
         m_Calls: []
-  - characterName: Recorder
-    text: 'First week can be pretty overwhelming, so I figured I''d leave you some
-      helpful instructions to get you started. '
-    typewriterSpeed: 0.05
-    waitForInput: 1
-    onLineComplete: {fileID: 0}
-    onLineStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onLineEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - characterName: Recorder
-    text: Let's see... ah yes - no need to worry about the door code, I left it open
-      for you. Wouldn't want you standing out there in the cold!
+  - characterName: Me
+    text: 'Kid? It''s been a long while since i was a youngster! '
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

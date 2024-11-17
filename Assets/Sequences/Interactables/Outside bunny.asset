@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Me
-    text: It's a cute bunny statue.
+    text: It's a cute bunny statue! It reminds me of something...
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

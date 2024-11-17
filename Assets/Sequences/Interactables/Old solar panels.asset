@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Me
-    text: Old solar panels. They still seem functional.
+    text: These solar panels are old, but they still seem functional.
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

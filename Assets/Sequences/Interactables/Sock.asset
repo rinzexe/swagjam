@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Me
-    text: That's one stinky sock
+    text: That's one stinky sock...
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

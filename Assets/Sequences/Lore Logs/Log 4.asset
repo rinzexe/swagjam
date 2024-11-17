@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2738cf7ac5f1dfeeb7e3433d1e6c239, type: 3}
-  m_Name: Bottom floor intro
+  m_Name: Log 4
   m_EditorClassIdentifier: 
   lines:
   - characterName: Recorder
-    text: This is your new house!
+    text: How do I turn on this thing??
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
@@ -25,7 +25,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Recorder
-    text: Feel free to make yourself at home, it's all yours!
+    text: "\u2026Oh, hello, new kid! Congrats on the lighthouse keeper gig! "
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
@@ -36,7 +36,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Recorder
-    text: It's not the largest, but you'll get used to it.
+    text: Knowing how the start goes, I wanted to make the job a bit easier for you
+      and leave you instructions.
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
@@ -47,8 +48,19 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - characterName: Recorder
-    text: Come upstairs when you're ready to learn about your new responsibilities
-      as a lighthouse keeper!
+    text: "Okay now, what\u2019s first\u2026 The door! You should be able to get
+      in without any issues, i left it open for you!"
+    typewriterSpeed: 0.05
+    waitForInput: 1
+    onLineComplete: {fileID: 0}
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onLineEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - characterName: Me
+    text: Didn't he... Say that already?
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}

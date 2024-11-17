@@ -14,18 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Me
-    text: The windows are perfectly clean.
-    typewriterSpeed: 0.05
-    waitForInput: 1
-    onLineComplete: {fileID: 0}
-    onLineStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onLineEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - characterName: Me
-    text: No need to clean them.
+    text: The windows are clear and shining for now!
     typewriterSpeed: 0.05
     waitForInput: 1
     onLineComplete: {fileID: 0}
